@@ -1,18 +1,13 @@
-import { ChakraProvider, Box, Flex, Image } from "@chakra-ui/react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { Box, Flex, Image } from "@chakra-ui/react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./Components/Header";
-import Home from "./Components/Home";
 import Footer from "./Components/Footer";
-import Gallery from "./Components/Gallery";
+import Gallery from "./Components/Gallery/Gallery";
+import Achievements from "./Components/Gallery/Achievements/Achievements";
 import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Blog from "./Components/Blog";
-import Login from "./Components/Login";
+import Blog from "./Components/Blog/Blog";
+import Practicals from "./Components/Blog/Practicals/Practicals"
+// import Login from "./Components/Login";
 import ForgotPassword from "./Components/ForgotPassword";
 import { useState, useEffect } from "react";
 
@@ -47,12 +42,13 @@ function AppContent() {
 
       <Box as="main" mt={!hideHeaderFooter ? 4 : 0}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Blog />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/achievements" element={<Achievements />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/login" element={<Login />} />
+           <Route path="/practicals" element={<Practicals />} />
+          {/* <Route path="/login" element={<Login />} /> */}
           <Route path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>
       </Box>
@@ -63,13 +59,8 @@ function AppContent() {
 }
 
 function App() {
-  return (
-    <ChakraProvider>
-      <Router>
-        <AppContent />
-      </Router>
-    </ChakraProvider>
-  );
+  // Providers (ChakraProvider, BrowserRouter) are applied in `src/main.tsx`.
+  return <AppContent />;
 }
 
 export default App;
