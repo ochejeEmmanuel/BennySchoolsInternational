@@ -9,7 +9,7 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import Gallery from "./Components/Gallery";
-import About from "./Components/About";
+import About from "./Components/about/About";
 import Contact from "./Components/Contact";
 import Blog from "./Components/Blog";
 import Login from "./Components/Login";
