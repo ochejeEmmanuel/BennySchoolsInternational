@@ -5,9 +5,9 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import Header from "./Components/Header";
+// import Header from "./Components/Header";
 import Home from "./Components/Home";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import Gallery from "./Components/Gallery";
 import About from "./Components/about/About";
 import Contact from "./Components/Contact";
@@ -43,7 +43,7 @@ function AppContent() {
 
   return (
     <>
-      {!hideHeaderFooter && <Header />}
+      {/* {!hideHeaderFooter && <Header />} */}
 
       <Box as="main" mt={!hideHeaderFooter ? 4 : 0}>
         <Routes>
@@ -57,7 +57,7 @@ function AppContent() {
         </Routes>
       </Box>
 
-      {!hideHeaderFooter && <Footer />}
+      {/* {!hideHeaderFooter && <Footer />} */}
     </>
   );
 }
