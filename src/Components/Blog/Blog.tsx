@@ -22,7 +22,7 @@ import {
   SearchIcon,
   ChevronDownIcon,
 } from "@chakra-ui/icons";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface BlogPost {
   id: number;
@@ -47,14 +47,6 @@ const blogPosts: BlogPost[] = Array.from({ length: 12 }).map((_, i) => ({
 
 const BlogCard: React.FC<{ post: BlogPost }> = ({ post }) => {
   const cardBg = useColorModeValue("white", "gray.800");
-  const navigate = useNavigate();
-
-  
-  const handleImageClick = () => {
-    if (post.id === 1) {
-      navigate("/practicals");
-    }
-  };
 
   return (
     <Box
@@ -65,15 +57,26 @@ const BlogCard: React.FC<{ post: BlogPost }> = ({ post }) => {
       transition="all 0.2s ease"
       _hover={{ transform: "translateY(-3px)", boxShadow: "md" }}
     >
-      <Image
-        src={post.image}
-        alt={post.title}
-        w="100%"
-        h="180px"
-        objectFit="cover"
-        cursor={post.id === 1 ? "pointer" : "default"}
-        onClick={handleImageClick}
-      />
+      {post.id === 1 ? (
+        <Link to="/blog/practicals">
+          <Image
+            src={post.image}
+            alt={post.title}
+            w="100%"
+            h="180px"
+            objectFit="cover"
+            cursor="pointer"
+          />
+        </Link>
+      ) : (
+        <Image
+          src={post.image}
+          alt={post.title}
+          w="100%"
+          h="180px"
+          objectFit="cover"
+        />
+      )}
 
       <Box p={5}>
         <Heading as="h3" fontSize="lg" mb={2}>

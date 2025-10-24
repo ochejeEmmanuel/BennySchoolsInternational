@@ -14,6 +14,9 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaTwitter, FaFacebook, FaLinkedin, FaLink } from "react-icons/fa";
+import avatarImage from '../../../assets/Avatar (1).png';
+import mainImage from '../../../assets/Image.png';
+import secondaryImage from '../../../assets/Image (1).png';
 
 interface ArticleHeader {
   publishDate: string;
@@ -67,7 +70,7 @@ const Practicals: React.FC = () => {
           mb={6}
         >
           <HStack spacing={3}>
-            <Avatar size="md" name="Olivia Rhye" src="src/assets/Avatar (1).png" />
+            <Avatar size="md" name="Olivia Rhye" src={avatarImage} />
             <VStack align="start" spacing={0}>
               <Text fontWeight="medium">Olivia Rhye</Text>
               <Text fontSize="sm" color="gray.500">
@@ -118,7 +121,7 @@ const Practicals: React.FC = () => {
           mx="auto"
         >
           <Image
-            src="src/assets/Image.png"
+            src={mainImage}
             alt="Doughnuts and Fish Pie Preparation"
             borderRadius="lg"
             w="100%"
@@ -142,7 +145,7 @@ const Practicals: React.FC = () => {
           </Text>
 
           <Image
-            src="src/assets/Image (1).png"
+            src={secondaryImage}
             alt="Office workspace"
             borderRadius="lg"
             w="100%"
@@ -217,7 +220,7 @@ Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ul
           gap={4}
         >
           <HStack spacing={3}>
-            <Avatar size="md" name="Olivia Rhye" src="src/assets/Avatar (1).png" />
+            <Avatar size="md" name="Olivia Rhye" src={avatarImage} />
             <VStack align="start" spacing={0}>
               <Text fontWeight="medium">Olivia Rhye</Text>
               <Text fontSize="sm" color="gray.500">

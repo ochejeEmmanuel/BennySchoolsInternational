@@ -47,7 +47,7 @@ function AppContent() {
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
-           <Route path="/practicals" element={<Practicals />} />
+          <Route path="/blog/practicals" element={<Practicals />} />
           {/* <Route path="/login" element={<Login />} /> */}
           <Route path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>
