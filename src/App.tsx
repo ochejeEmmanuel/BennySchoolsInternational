@@ -6,6 +6,7 @@ import Gallery from "./Components/Gallery/Gallery";
 import Achievements from "./Components/Gallery/Achievements/Achievements";
 import About from "./Components/About";
 import Blog from "./Components/Blog/Blog";
+import Practicals from './Components/Blog/Practicals/Practicals'
 import ForgotPassword from "./Components/ForgotPassword";
 import { useState, useEffect } from "react";
 import Home from "./Components/Home";
@@ -47,7 +48,7 @@ function AppContent() {
           <Route path="/gallery/achievements" element={<Achievements />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/practicals" element={<Blog />} />
+          <Route path="/blog/practicals" element={<Practicals />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>
       </Box>
