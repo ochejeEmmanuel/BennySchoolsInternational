@@ -6,7 +6,6 @@ import {
   IconButton,
   Image,
   Text,
-  // Icon,
   useDisclosure,
   useColorModeValue,
   Drawer,
@@ -18,7 +17,6 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import {
-  
   FaBars,
   FaTimes,
 } from "react-icons/fa";
@@ -50,7 +48,7 @@ const Header = () => {
         bg={bgColor}
       >
         <Image
-          src="src/assets/benny_logo_300x300.png"
+          src="/src/assets/benny_logo_300x300.png"
           alt="Benny Schools Logo"
           boxSize="80px"
           objectFit="contain"
