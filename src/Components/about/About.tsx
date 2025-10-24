@@ -285,7 +285,7 @@ import { Box, Flex, Heading, Text, Image, Stack } from "@chakra-ui/react";
 const About = () => {
   return (
     <>
-      <Box mx={{ base: "5", lg: "20" }} overflowX={"hidden"} overflowY={"auto"}>
+      <Box mx={{ base: "5", lg: "20" }}>
         {/* -------- ABOUT SECTION -------- */}
         <Box px={{ base: "1.5em", md: "6em" }} mt={{ base: 8, md: 12 }}>
           <Text color="blue.500" fontWeight="500">
@@ -360,8 +360,8 @@ const About = () => {
           <Box
             position="absolute"
             top="60px"
-            right="100px"
-            w="1140px"
+            right="50px"
+            w="1010px"
             h="2px"
             bg="gray.400"
           />
@@ -518,7 +518,7 @@ const About = () => {
             <Heading
               color="rgba(16, 24, 40, 1)"
               fontSize={{ base: "2xl", md: "3xl" }}
-              ml={{ base: "1.5em", md: 4 }}
+              ml={{ base: "0.5em", md: 4 }}
             >
               Our Achievements
             </Heading>
