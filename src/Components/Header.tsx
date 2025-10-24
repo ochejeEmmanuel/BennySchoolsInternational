@@ -34,6 +34,7 @@
 //   const hoverColor = "blue.600";
 //   const bgColor = useColorModeValue("white", "gray.900");
 
+<!-- <<<<<<< benny-school-website -->
 //   return (
 //     <Box
 //       w="100%"
@@ -57,6 +58,31 @@
 //           boxSize="80px"
 //           objectFit="contain"
 //         />
+<!-- ======= -->
+  return (
+    <Box
+      w="100%"
+      position="sticky"
+      top="0"
+      zIndex="1000"
+      boxShadow="md"
+      bg={bgColor}
+    >
+      {/* ===== Navbar ===== */}
+      <Flex
+        justify="space-between"
+        align="center"
+        px={{ base: 4, md: 4 }}
+        py={1}
+        bg={bgColor}
+      >
+        <Image
+          src="/src/assets/benny_logo_300x300.png"
+          alt="Benny Schools Logo"
+          boxSize="80px"
+          objectFit="contain"
+        />
+<!-- >>>>>>> main -->
 
 //         {/* Desktop Nav */}
 //         <HStack
