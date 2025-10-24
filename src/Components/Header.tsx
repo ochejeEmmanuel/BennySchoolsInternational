@@ -22,7 +22,7 @@ import {
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const navItems = ["About", "Contact", "Gallery", "Blog", "Login"];
+const navItems = ["Home", "About", "Contact", "Gallery", "Blog", "Login"];
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

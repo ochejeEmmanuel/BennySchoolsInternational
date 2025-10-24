@@ -19,10 +19,10 @@ import mathildemobile from '../assets/mathildemobile.jpg'
 
 const Home = () => {
   return (
-    <Box w="100%" py={{base: 10, md: 4 }}>
+    <Box w="100%" py={{base: 10, lg: 10 }}>
 
-      <Text>
-        <Text fontSize={{base:"4xl", lg: "2xl"}} gap="5" fontWeight="bold" mx={{base: 5, lg: 20}} width={{base: "80", lg: "600px"}} lineHeight="shorter">
+      <Box>
+        <Text fontSize={{base:"4xl", lg: "3xl"}} gap="5" fontWeight="bold" mx={{base: 5, lg: 20}} width={{base: "80", lg: "700px"}} lineHeight="shorter" >
           <Text as="span" color="#0675C6">
             20 Years of Excellence
           </Text> 
@@ -31,7 +31,7 @@ const Home = () => {
         <Text color="" mt={5} mx={{base: 5, lg: 20}} width={{base: "80", lg: "550px"}}> 
           Benny International Schools (BIS) was established on October 1st, 2001 by Mrs. Beniere O. Ifidi due to her desire to contribute to the manpower development of the state.
         </Text>
-      </Text>
+      </Box>
 
       <Flex align="center" ml={{base: "5", lg: "20"}} mt={10}>
         <Box display={{base: "none", lg: "block"}} width={"100%"} mr={16}>
@@ -126,7 +126,7 @@ const Home = () => {
         </Box>
 
         <Grid templateColumns={{base: "none", lg: "repeat(3, 1fr)"}}mx={{base: 5, lg: 20}} gap="10">
-          <Box borderRadius={"lg"} boxShadow={"lg"} pb={5} px="5">
+          <Box borderRadius={"lg"} boxShadow={"lg"} py={5} px="5">
             <Box borderRadius={"lg"} >
               <img src={Gallery} alt="" />
             </Box>
@@ -147,7 +147,7 @@ const Home = () => {
             </Flex>
           </Box>
 
-          <Box borderRadius={"lg"} boxShadow={"lg"} pb={5} px="5">
+          <Box borderRadius={"lg"} boxShadow={"lg"} py={5} px="5">
             <img src={Gallery} alt="" />
 
             <Text fontWeight={"bold"} fontSize={24} lineHeight={7} my={3}>
@@ -166,7 +166,7 @@ const Home = () => {
             </Flex>
           </Box>
 
-          <Box borderRadius={"lg"} boxShadow={"lg"} pb={5} px="5">
+          <Box borderRadius={"lg"} boxShadow={"lg"} py={5} px="5">
             <img src={Gallery} alt="" />
 
             <Text fontWeight={"bold"} fontSize={24} lineHeight={7} my={3}>

@@ -129,8 +129,7 @@ const Blog: React.FC = () => {
             gap={3}
             align="stretch"
             direction={{ base: "column", sm: "row" }}
-            w="100%"
-          >
+            w="100%">
             <Input
               placeholder="Enter your email"
               bg="white"

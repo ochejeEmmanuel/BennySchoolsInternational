@@ -11,7 +11,7 @@ const galleryItems: GalleryItem[] = [
   {
     title: "Best graduating student",
     description: "Photos capturing proud moments of academic excellence, award ceremonies, and noteworthy achievements by our students.",
-    imageUrl: "src/assets/Image (2).png",
+    imageUrl: ("src/assets/Image (2).png"),
   },
   {
     title: "Best graduating student",
@@ -64,9 +64,9 @@ const GalleryCard: React.FC<GalleryItem> = ({ title, description, imageUrl }) =>
 
 const App: React.FC = () => {
   return (
-    <Box p={{ base: 8, md: 20 }} maxW="6xl" mx="auto">
-      <VStack align="start" spacing={2} mb={10}>
-       
+    <Box py={{ base: 10, lg: 10 }}>
+
+      <VStack align="start" spacing={2} mb={10} mx={{base: 5, lg: 20}}> 
         <Text fontSize="md" color="blue.500" fontWeight="semibold" mb={4}>
           Gallery
         </Text>
@@ -85,7 +85,7 @@ const App: React.FC = () => {
         <Text 
           fontSize={{ base: "md", md: "lg" }} 
           color="gray.600" 
-          maxW="3xl"
+          maxW="3xl" 
         >
          Photos capturing proud moments of academic excellence, award ceremonies, and noteworthy achievements by our students.
         </Text>
@@ -94,7 +94,7 @@ const App: React.FC = () => {
       {/* Gallery Grid */}
       <SimpleGrid 
         columns={{ base: 1, lg: 2 }}
-        spacing={8}
+        spacing={8} mx={{base: 5, lg: 20}}
       >
         {galleryItems.map((item, index) => (
           <GalleryCard 
