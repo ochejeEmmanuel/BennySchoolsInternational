@@ -6,7 +6,7 @@ import {
   IconButton,
   Image,
   Text,
-  Icon,
+  // Icon,
   useDisclosure,
   useColorModeValue,
   Drawer,
@@ -18,9 +18,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import {
-  FaPhone,
-  FaEnvelope,
-  FaClock,
+  
   FaBars,
   FaTimes,
 } from "react-icons/fa";

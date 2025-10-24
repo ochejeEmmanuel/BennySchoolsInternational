@@ -11,7 +11,7 @@ import Footer from "./Components/Footer";
 import Gallery from "./Components/Gallery";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
-import Blog from "./Components/Blog";
+// import Blog from "./Components/Blog";
 import Login from "./Components/Login";
 import ForgotPassword from "./Components/ForgotPassword";
 import { useState, useEffect } from "react";
@@ -51,7 +51,7 @@ function AppContent() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>
