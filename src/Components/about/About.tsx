@@ -279,269 +279,142 @@
   
   // ];
   
-  "use client";
+ "use client";
 import { Box, Flex, Heading, Text, Image, Stack } from "@chakra-ui/react";
-// import React from "react";
 
 const About = () => {
   return (
     <>
-      {/* -------- ABOUT SECTION -------- */}
-      <Box px={{ base: "1.5em", md: "6em" }} mt={{ base: 8, md: 12 }}>
-        <Text color="blue.500" fontWeight="500">
-          About Us
-        </Text>
+      <Box mx={{ base: "5", lg: "20" }} overflowX={"hidden"} overflowY={"auto"}>
+        {/* -------- ABOUT SECTION -------- */}
+        <Box px={{ base: "1.5em", md: "6em" }} mt={{ base: 8, md: 12 }}>
+          <Text color="blue.500" fontWeight="500">
+            About Us
+          </Text>
 
-        <Flex
-          direction={{ base: "column", md: "row" }}
-          align={{ base: "flex-start", md: "center" }}
-          gap={{ base: 6, md: 16 }}
-          mt={4}
-        >
-          <Box flex="1">
-            <Heading
-              fontSize={{ base: "2xl", md: "3xl" }}
-              color="rgba(16, 24, 40, 1)"
-            >
-              Welcome to Benny International School.
-            </Heading>
-          </Box>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            align={{ base: "flex-start", md: "center" }}
+            gap={{ base: 6, md: 16 }}
+            mt={4}
+          >
+            <Box flex="1">
+              <Heading
+                fontSize={{ base: "2xl", md: "3xl" }}
+                color="rgba(16, 24, 40, 1)"
+              >
+                Welcome to Benny International School.
+              </Heading>
+            </Box>
 
-          <Box flex="1">
-            <Text color="rgba(102, 112, 133, 1)">
-              In Benny International Schools, Diligence and Excellence is our
-              motto and watchword. We have put things in place as we grow to
-              better accommodate the educational needs of our 21st century
-              students.
+            <Box flex="1">
+              <Text color="rgba(102, 112, 133, 1)">
+                In Benny International Schools, Diligence and Excellence is our
+                motto and watchword. We have put things in place as we grow to
+                better accommodate the educational needs of our 21st century
+                students.
+              </Text>
+            </Box>
+          </Flex>
+        </Box>
+
+        {/* -------- HISTORY -------- */}
+        <Box px={{ base: "1.5em", md: "6em" }} mt={{ base: 12, md: 20 }}>
+          <Heading color="rgba(16, 24, 40, 1)" mb={6}>
+            Our History
+          </Heading>
+
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            spacing={{ base: 8, md: 12 }}
+            color="rgba(102, 112, 133, 1)"
+          >
+            <Text flex="1">
+              Benny International Schools (BIS) was established on October 1st,
+              2001 (over 20 years now) by Mrs. Beniere O. Ifidi due to her
+              desire to contribute to the manpower development of the state. We
+              began with 31 students in JSS1 and JSS2 classes. And now we have
+              over 300 students across all class levels and over 35 staff
+              members.
             </Text>
-          </Box>
-        </Flex>
-      </Box>
+            <Text flex="1">
+              Benny International Schools (BIS) was established on October 1st,
+              2001 (over 20 years now) by Mrs. Beniere O. Ifidi due to her
+              desire to contribute to the manpower development of the state. We
+              began with 31 students in JSS1 and JSS2 classes. And now we have
+              over 300 students across all class levels and over 35 staff
+              members.
+            </Text>
+          </Stack>
+        </Box>
 
-      {/* -------- HISTORY -------- */}
-      <Box px={{ base: "1.5em", md: "6em" }} mt={{ base: 12, md: 20 }}>
-        <Heading color="rgba(16, 24, 40, 1)" mb={6}>
-          Our History
-        </Heading>
-
-        <Stack
-          direction={{ base: "column", md: "row" }}
-          spacing={{ base: 8, md: 12 }}
-          color="rgba(102, 112, 133, 1)"
+        {/* Decorative Shapes (Top-Right) — hidden on mobile */}
+        <Box
+          position="relative"
+          w="100%"
+          h="300px"
+          overflow="hidden"
+          mt="4em"
+          display={{ base: "none", md: "block" }}
         >
-          <Text flex="1">
-            Benny International Schools (BIS) was established on October 1st,
-            2001 (over 20 years now) by Mrs. Beniere O. Ifidi due to her desire
-            to contribute to the manpower development of the state. We began
-            with 31 students in JSS1 and JSS2 classes. And now we have over 300
-            students across all class levels and over 35 staff members.
+          <Box
+            position="absolute"
+            top="60px"
+            right="100px"
+            w="1140px"
+            h="2px"
+            bg="gray.400"
+          />
+          <Box position="absolute" top="0" right="10px" opacity={0.9}>
+            <Image src="src/assets/Shape (1).png" alt="Blue shape" w="35px" />
+          </Box>
+          <Box position="absolute" top="80px" right="8px" opacity={0.8}>
+            <Image src="src/assets/Shape.png" alt="Green shape" w="100px" />
+          </Box>
+        </Box>
+
+        {/* -------- WHAT DRIVES US -------- */}
+        <Box
+          px={{ base: "1.5em", md: "6em" }}
+          mt={{ base: "1.5em", md: "-9em" }}
+          textAlign="left"
+        >
+          <Heading ml=".5em" color="rgba(16, 24, 40, 1)" mb={2}>
+            What drives us
+          </Heading>
+          <Text ml="1em" color="rgba(102, 112, 133, 1)" mb={6}>
+            Our vision and mission statements are key to us offering our best.
           </Text>
-          <Text flex="1">
-            Benny International Schools (BIS) was established on October 1st,
-            2001 (over 20 years now) by Mrs. Beniere O. Ifidi due to her desire
-            to contribute to the manpower development of the state. We began
-            with 31 students in JSS1 and JSS2 classes. And now we have over 300
-            students across all class levels and over 35 staff members.
-          </Text>
-        </Stack>
-      </Box>
 
-      {/* Decorative Shapes (Top-Right) */}
-    {/* Decorative Shapes (Top-Right) — hidden on mobile */}
- <Box 
- position="relative" 
- w="100%"
-  h="300px"
-   overflow="hidden"
-   mt={"4em"}
-   display={{ base: "none", md: "block" }}
- >
-      {/* Blue horizontal line */}
-      <Box
-        position="absolute"
-        top="60px"
-        right="100px"
-        w="1140px"
-        h="2px"
-        bg="gray.400"
-      />
-
-      {/* Blue shape */}
-      <Box
-        position="absolute"
-        top="0"
-        right="10px"
-        transform="rotate(0deg)"
-        opacity={0.9}
-      >
-        <Image src="src/assets/Shape (1).png" alt="Blue shape" w="35px" />
-      </Box>
-
-      {/* Green shape */}
-      <Box
-        position="absolute"
-        top="80px"
-        right="8px"
-        opacity={0.8}
-      >
-        <Image src="src/assets/Shape.png" alt="Green shape" w="100px" />
-      </Box>
-    </Box>
-
-
-      {/* -------- WHAT DRIVES US -------- */}
-      <Box px={{ base: "1.5em", md: "6em" }} mt={{ base: "1.5em", md: "6em" }}textAlign={{ base: "left", md: "left" }}>
-        <Heading ml={"1.5em"} color="rgba(16, 24, 40, 1)" mb={2}>
-          What drives us
-        </Heading>
-        <Text ml={"3em"} color="rgba(102, 112, 133, 1)" mb={6}>
-          Our vision and mission statements are key to us offering our best.
-        </Text>
-
-        <Stack
-          direction={{ base: "column", md: "row" }}
-          spacing={{ base: 8, md: 10 }}
-          justify="center"
-          align="center"
-        >
-          {/* Vision Card */}
-          <Box position="relative" w={{ base: "90%", md: "500px" }} ml={"-1em"} h="400px" borderRadius="24px" overflow="hidden">
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            spacing={{ base: 8, md: 10 }}
+            justify="center"
+            align="center"
+          >
+            {/* Vision Card */}
             <Box
-              position="absolute"
-              inset="0"
-              bgImage="url('src/assets/vision.jpg')"
-              bgSize="cover"
-              bgPosition="center"
-              filter="brightness(0.8)"
-            />
-            <Box
-              position="absolute"
-              bottom="6"
-              left="50%"
-              transform="translateX(-50%)"
-              w="90%"
-              bg="rgba(255,255,255,0.2)"
-              backdropFilter="blur(6px)"
-              border="1px solid rgba(255,255,255,0.3)"
-              borderRadius="12px"
-              p={4}
-            >
-              <Heading as="h2" size="lg" mb={2} color="white">
-                Our Vision
-              </Heading>
-              <Text fontSize="md" color="white">
-                To raise children with the necessary skills and attitude that
-                will enable them serve in a highly competitive world.
-              </Text>
-            </Box>
-          </Box>
-
-          {/* Mission Card */}
-          <Box position="relative" w={{ base: "90%", md: "500px" }} h="400px" borderRadius="24px" overflow="hidden">
-            <Box
-              position="absolute"
-              inset="0"
-              bgImage="url('src/assets/mission 1.jpg')"
-              bgSize="cover"
-              bgPosition="center"
-              filter="brightness(0.8)"
-            />
-            <Box
-              position="absolute"
-              bottom="6"
-              left="50%"
-              transform="translateX(-50%)"
-              w="90%"
-              bg="rgba(255,255,255,0.2)"
-              backdropFilter="blur(6px)"
-              border="1px solid rgba(255,255,255,0.3)"
-              borderRadius="12px"
-              p={4}
-            >
-              <Heading as="h2" size="lg" mb={2} color="white">
-                Our Mission
-              </Heading>
-              <Text fontSize="md" color="white">
-                To support the government in providing qualitative education
-                through improved standards, eradicate indiscipline, and provide
-                opportunities for children with diverse talents to meet the
-                challenges of our time.
-              </Text>
-            </Box>
-          </Box>
-        </Stack>
-      </Box>
-
-{/* -------- ACHIEVEMENTS -------- */}
-<Box px={{ base: "1.5em", md: "6em" }}  mt={{ base: 12, md: 20 }}>
-  <Flex align="center" mb={8} ml={{ base: "", md: "-7.5em" }} position="relative">
-    {/* Decorative shapes — hidden on mobile */}
-    <Box
-      position="relative"
-      w="100px"
-      h="100px"
-      display={{ base: "none", md: "block" }}
-    >
-      {/* Blue shape */}
-      <Box position="absolute" left="30px" top="0" opacity={0.9} zIndex={3}>
-        <Image src="src/assets/Shape (2).png" alt="Blue shape" w="60px" />
-      </Box>
-
-      {/* Green shape */}
-      <Box position="absolute" left="26px" top="80px" opacity={0.8} zIndex={3}>
-        <Image src="src/assets/Shape (3).png" alt="Green shape" w="80px" />
-      </Box>
-    </Box>
-
-    {/* Heading — visible on all screens */}
-    <Heading
-      color="rgba(16, 24, 40, 1)"
-      fontSize={{ base: "2xl", md: "3xl" }}
-      ml={{ base: "1.5em", md: 4 }}
-    >
-      Our Achievements
-    </Heading>
-  </Flex>
-</Box>
-
-
-        <Flex
-          direction={{ base: "column", md: "row" }}
-          gap={{ base: 8, md: 6 }}
-          justify="center"
-          mt={"0.1em"}
-          ml={"-0.1em"}
-          align="center"
-          flexWrap="wrap"
-        >
-          {[
-            { year: "2018", text: "Best Standard School", img: "mission.jpg" },
-            { year: "2016", text: "Shell/NNPC Joint Science Competition – 1st Position", img: "chesse.jpg" },
-            { year: "2015", text: "NTA 2nd Edition Senior Science Quiz Competition", img: "lab.jpg" },
-            { year: "2011", text: "Award Macmillan to Team Success", img: "libray.jpg" },
-          ].map((item, index) => (
-            <Box
-              key={index}
               position="relative"
-              w={{ base: "90%", md: "300px" }}
+              w={{ base: "90%", md: "500px" }}
+              ml="-1em"
               h="400px"
-              borderRadius="20px"
+              borderRadius="24px"
               overflow="hidden"
             >
               <Box
                 position="absolute"
                 inset="0"
-                ml={"0.5em"}
-                bgImage={`url('src/assets/${item.img}')`}
+                bgImage="url('src/assets/vision.jpg')"
                 bgSize="cover"
-                // bgPosition="center"
+                bgPosition="center"
+                filter="brightness(0.8)"
               />
               <Box
                 position="absolute"
                 bottom="6"
                 left="50%"
                 transform="translateX(-50%)"
-                w="85%"
+                w="90%"
                 bg="rgba(255,255,255,0.2)"
                 backdropFilter="blur(6px)"
                 border="1px solid rgba(255,255,255,0.3)"
@@ -549,18 +422,210 @@ const About = () => {
                 p={4}
               >
                 <Heading as="h2" size="lg" mb={2} color="white">
-                  {item.year}
+                  Our Vision
                 </Heading>
                 <Text fontSize="md" color="white">
-                  {item.text}
+                  To raise children with the necessary skills and attitude that
+                  will enable them serve in a highly competitive world.
                 </Text>
               </Box>
             </Box>
-          ))}
-        </Flex>
+
+            {/* Mission Card */}
+            <Box
+              position="relative"
+              w={{ base: "90%", md: "500px" }}
+              h="400px"
+              borderRadius="24px"
+              overflow="hidden"
+            >
+              <Box
+                position="absolute"
+                inset="0"
+                bgImage="url('src/assets/mission 1.jpg')"
+                bgSize="cover"
+                bgPosition="center"
+                filter="brightness(0.8)"
+              />
+              <Box
+                position="absolute"
+                bottom="6"
+                left="50%"
+                transform="translateX(-50%)"
+                w="90%"
+                bg="rgba(255,255,255,0.2)"
+                backdropFilter="blur(6px)"
+                border="1px solid rgba(255,255,255,0.3)"
+                borderRadius="12px"
+                p={4}
+              >
+                <Heading as="h2" size="lg" mb={2} color="white">
+                  Our Mission
+                </Heading>
+                <Text fontSize="md" color="white">
+                  To support the government in providing qualitative education
+                  through improved standards, eradicate indiscipline, and
+                  provide opportunities for children with diverse talents to
+                  meet the challenges of our time.
+                </Text>
+              </Box>
+            </Box>
+          </Stack>
+        </Box>
+
+        {/* -------- ACHIEVEMENTS -------- */}
+        <Box px={{ base: "1.5em", md: "6em" }} mt={{ base: 12, md: 20 }} pb={10}>
+          <Flex align="center" mb={8} ml={{ base: 12, md: "-9em" }} position="relative">
+            {/* Decorative shapes — hidden on mobile */}
+            <Box
+              position="relative"
+              w="100px"
+              h="100px"
+              display={{ base: "none", md: "block" }}
+            >
+              {/* Blue shape */}
+              <Box
+                position="absolute"
+                left="30px"
+                top="0"
+                opacity={0.9}
+                zIndex={3}
+              >
+                <Image
+                  src="src/assets/Shape (2).png"
+                  alt="Blue shape"
+                  w="60px"
+                />
+              </Box>
+
+              {/* Green shape */}
+              <Box
+                position="absolute"
+                left="26px"
+                top="80px"
+                opacity={0.8}
+                zIndex={3}
+              >
+                <Image
+                  src="src/assets/Shape (3).png"
+                  alt="Green shape"
+                  w="80px"
+                />
+              </Box>
+            </Box>
+
+            {/* Heading — visible on all screens */}
+            <Heading
+              color="rgba(16, 24, 40, 1)"
+              fontSize={{ base: "2xl", md: "3xl" }}
+              ml={{ base: "1.5em", md: 4 }}
+            >
+              Our Achievements
+            </Heading>
+          </Flex>
+
+          {/* -------- ACHIEVEMENTS -------- */}
+<Box
+  px={{ base: "1.5em", md: "6em" }}
+  mt={{ base: 12, md: 20 }}
+  // textAlign="center"
+>
+  {/* Heading + Decorative Shapes
+  <Flex
+    align="center"
+    justify="center"
+    mb={8}
+    position="relative"
+    gap={4}
+  >
+    {/* Decorative shapes (hidden on mobile) */}
+    {/* <Box */}
+      {/* position="relative"
+      w="100px"
+      h="100px"
+      display={{ base: "none", md: "block" }}
+    > */}
+      {/* Blue shape */}
+      {/* <Box position="absolute" left="30px" top="0" opacity={0.9} zIndex={3}>
+        <Image src="src/assets/Shape (2).png" alt="Blue shape" w="60px" />
+      </Box>
+
+      {/* Green shape */}
+      {/* <Box position="absolute" left="26px" top="80px" opacity={0.8} zIndex={3}>
+        <Image src="src/assets/Shape (3).png" alt="Green shape" w="80px" />
+      </Box>
+    </Box> */} 
+
+    {/* Heading — centered */}
+    {/* <Heading
+      color="rgba(16, 24, 40, 1)"
+      fontSize={{ base: "2xl", md: "3xl" }}
+    >
+      Our Achievements
+    </Heading>
+  </Flex> */} 
+
+  {/* Achievement Cards */}
+  <Flex
+    direction={{ base: "column", md: "row" }}
+    justify="center"
+    align="center"
+    gap={{ base: 8, md: 6 }}
+    flexWrap="nowrap"       // 🔥 keeps all cards on one straight line on desktop
+    overflowX={{ base: "auto", md: "visible" }} // allows horizontal scroll on mobile if needed
+    mx="auto"
+    maxW="1200px"
+  >
+    {[
+      { year: "2018", text: "Best Standard School", img: "mission.jpg" },
+      { year: "2016", text: "Shell/NNPC Joint Science Competition – 1st Position", img: "chesse.jpg" },
+      { year: "2015", text: "NTA 2nd Edition Senior Science Quiz Competition", img: "lab.jpg" },
+      { year: "2011", text: "Award Macmillan to Team Success", img: "libray.jpg" },
+    ].map((item, index) => (
+      <Box
+        key={index}
+        position="relative"
+        w={{ base: "90%", md: "280px" }}
+        h="380px"
+        borderRadius="20px"
+        overflow="hidden"
+        flexShrink={0}       // 🔥 ensures equal width and straight alignment
+      >
+        <Box
+          position="absolute"
+          inset="0"
+          bgImage={`url('src/assets/${item.img}')`}
+          bgSize="cover"
+          bgPosition="center"
+        />
+        <Box
+          position="absolute"
+          bottom="6"
+          left="50%"
+          transform="translateX(-50%)"
+          w="85%"
+          bg="rgba(255,255,255,0.2)"
+          backdropFilter="blur(6px)"
+          border="1px solid rgba(255,255,255,0.3)"
+          borderRadius="12px"
+          p={4}
+        >
+          <Heading as="h2" size="lg" mb={2} color="white">
+            {item.year}
+          </Heading>
+          <Text fontSize="md" color="white">
+            {item.text}
+          </Text>
+        </Box>
+      </Box>
+    ))}
+  </Flex>
+</Box>
+
+        </Box>
+      </Box>
     </>
   );
 };
 
 export default About;
-
